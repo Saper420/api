@@ -36,7 +36,7 @@ export const updateSingleTable = tableData => {
       })
     };
     
-    fetch(`${API_URL}/tables/${tableData.id}`, options)
+    fetch(`http://localhost:3000/tables/${tableData.id}`, options)
       .then(() => dispatch(editTable(tableData)))
   }
 }
