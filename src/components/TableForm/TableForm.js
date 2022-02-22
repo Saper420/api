@@ -36,7 +36,6 @@ const TableForm = () => {
   }
 
   const handleSubmit = e => {
-    e.preventDefault();
     dispatch(updateSingleTable({status, peopleAmount, maxPeopleAmount, bill, id }))
     navigate("/")
   }
